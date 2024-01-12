@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+        <title>Miniga</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="Bilder\Logo_header.jpeg">
+            </div>
+            <div id="shopping-card">
+                <img src="https://cdn.icon-icons.com/icons2/1302/PNG/512/onlineshoppingcart_85781.png">
+            </div>
+        </header>
+        <main>
+            <div class="main-content center">
+                <img src="Bilder\IMG_1362.jpeg">
+                <div class="text">
+                    <p>- Erlebe den ultimativen Style und Komfort -</p>
+                </div>
+            </div>
+            <br>
+            <div class="main-product">
+                <h1 class="center">Miniga Triple S</h1>
+                <div class="image-text center">
+                    <div class="image">
+                        <img src="Bilder\Bild2.PNG">
+                    </div>
+                    <div class="text">
+                        Der Miniga Triple S bringt deine<br/>Schritte auf ein ganz neues<br/>Level!
+                    </div>
+                </div>
+                <div class="image-image center">
+                    <div class="image">
+                        <img src="Bilder\Bild3.PNG">
+                        <div class="price">895 EUR</div>
+                    </div>
+                    <div class="image last">
+                        <img src="Bilder\image1.jpeg">
+                    </div>
+                </div>
+                <div class="image-text center space">
+                    <div class="text left">
+                        <b>Produkteigenschaften</b>
+                        <ul>
+                            <li>Doppelschaumstoff und Mesh</li>
+                            <li>Komplexe 3-lagige Laufsohle, Clear-Sole-Technologie </li>
+                            <li>Größe am Rand des Zehenbereiches aufgestickt</li>
+                            <li>Logo Seitlich aufgestickt und hinten geprägtes Logo</li>
+                            <li>2 Schnürschlaufen inkl. 1 Funktionsschlaufe</li>
+                            <li>1 Paar extra Schnürsenkel</li>
+                            <li>Zuglasche hinten an der Zunge</li>
+                        </ul>
+                        Material: 48% Polyurethan + 52% Polyester
+                        <div class="center">
+                            <button class="button buy">Jetzt Kaufen!</button>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="Bilder/image3.png">
+                    </div>
+                </div>
+            </div>
+            <div class="main-content center">
+                <div class="text">
+                    <p>- Dein Schuh in deiner Nähe! -</p>
+                </div>
+            </div>
+            <div class="main-buttons center">
+                <form action="">
+                    <select class="form-field" id="size" name="size">
+                        <option value="" disabled selected>Größe</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                    </select>
+                    <input class="form-field" type="text" id="zipcode" name="zipcode" placeholder="Postleitzahl">
+                </form>
+            </div>
+            <div class="faq">
+                <button class="faq-header">ANGABEN ZU PRODUKTEN UND NACHHALTIGKEIT</button>
+                <div class="faq-content">
+                    <p>
+                        CO2-Fußabdruck: Wir arbeiten ständig daran, den ökologischen Fußabdruck
+                        unserer Produkte zu verringern.<br>
+                        Die verbleibenden Kohlenstoffemissionen, die mit sämtlichen Aktivitäten
+                        im Lebenszyklus dieses Produktes verbunden ist, werden sorgfältig berechnet
+                        und wir verpflichten uns, Mittel in Projekte zum Abbau von Kohlenstoff
+                        zu investieren, die unsere natürlichen Ökosysteme schützen und
+                        wiederherstellen, um den Klimawandel zu bekämpfen.
+                    </p>
+                </div>
+                <button class="faq-header">KOSTENLOSER VERSAND UND RÜCKVERSAND</button>
+                <div class="faq-content">
+                    <p>
+                        Die Rücksendung ist weltweit kostenlos möglich. Wenn Ihr
+                        Artikel für eine Rücksendung infrage kommt, haben Sie<br>
+                        30 Tage ab dem Erhalt der Bestellung, diesen Vorgang durchzuführen.
+                    </p>
+                </div>
+            </div>
+            <div class="main-links center">
+                <span>Newsletter</span>
+                <span>Connect</span>
+                <span>Kundendienste</span>
+                <span>Versand</span>
+                <span>Das Unternehmen</span>
+                <span>Boutiquen</span>
+                <span>Kontakt</span>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <img src="Bilder\Logo_footer.jpeg">
+            </div>
+        </footer>
+        <script>
+            const acc = document.getElementsByClassName('faq-header');
+            let i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    const panel = this.nextElementSibling;
+                    if (panel.style.display === 'block') {
+                        panel.style.display = 'none';
+                    } else {
+                        panel.style.display = 'block';
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>

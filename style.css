@@ -1,0 +1,169 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+header #logo img {
+    max-width: 10%;
+    height: auto;
+}
+
+header #shopping-card {
+    margin-left: auto;
+    text-align: right;
+}
+
+header #shopping-card img {
+    max-width: 5%;
+    height: auto;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+    font-size: 22px;
+}
+
+.main-content img {
+    width: 100%;
+}
+
+.main-product .image-text {
+    display: flex;
+    align-items: center;
+}
+
+.main-product .image-text.space {
+    justify-content: space-between;
+}
+
+.main-product .image-text .image {
+    width: 60%;
+}
+
+.main-product .image-text.space .image img {
+    width: 30%;
+}
+
+.main-product .image-text.space .text {
+    margin-left: 20px !important;
+}
+
+.main-product .image-text.center .text {
+    margin: 0 auto;
+}
+
+.main-product .image-text .image img,
+.main-product .image-image .image img {
+    width: 100%;
+}
+
+.main-product .image-image {
+    display: flex;
+    align-items: center;
+}
+
+.main-product .image-image .image {
+    width: 50%;
+}
+
+.main-product .image-image .image.last {
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.main-buttons {
+    background: #ccc;
+    padding: 30px 10px;
+}
+
+.main-buttons .form-field {
+    margin: 0 20px;
+}
+
+footer img {
+    width: 20%;
+    display: flex;
+    height: auto;
+    margin: auto;
+}
+
+.faq .faq-header {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.faq .faq-header::after {
+    content: "";
+    background: url("Bilder/down-arrow.svg");
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    display: block;
+    float: right;
+}
+
+.faq-content {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.main-links {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.main-links span {
+    text-decoration: underline;
+    flex: 1 1 25%;
+    margin: 10px 0;
+}
+
+.button {
+    background-color: #ccc;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button.buy {
+    margin-top: 20px;
+}
+
+.text ul {
+    margin-left: -25px;
+}
